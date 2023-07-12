@@ -1,0 +1,9 @@
+<h1>Register</h1>
+
+<div style="width: 100%;">
+    <form method="POST" style="padding: 20px; border: 1px solid #ccc;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+</div>

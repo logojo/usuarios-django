@@ -1,0 +1,17 @@
+<div>
+    <h1>Panel de usuario</h1>
+    <h3>Bienvenido: {{ user }}</h3>
+
+    <p>
+        fecha {{ fecha }}
+    </p>
+
+    <ul>
+        <li>
+            <a href="{% url 'users_app:logout' %}">Cerrar sesión</a>
+        </li>
+        <li>
+            <a href="{% url 'users_app:update' %}">Actualizar datos</a>
+        </li>
+    </ul>
+</div>
